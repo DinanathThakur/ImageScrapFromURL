@@ -50,18 +50,6 @@ page.open(args[1], function () {
             }
             image_urls.push({src: images[q].src, alt: images[q].alt});
         }
-
-//        var elems = document.body.getElementsByTagName("*");
-//        for (var i = 0; i < elems.length; i++)
-//        {
-//            var properties = (elems[i].currentStyle || window.getComputedStyle(elems[i], false));
-//            bi = properties.backgroundImage.slice(4, -1).replace(/"/g, "");
-//            if (bi !== '') {
-//                image_urls.push({src: bi, alt: ''});
-//            }
-//        }
-        
-        
         return image_urls;
     });
     console.log(JSON.stringify(urls));
